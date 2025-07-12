@@ -1,0 +1,60 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secret files
+.env
+*.env
+
+# VSCode or PyCharm settings
+.vscode/
+.idea/
+
+# Python dependency files
+pip-log.txt
+
+# Mac system files
+*.DS_Store
+
+# PyInstaller output
+dist/
+build/
+*.spec
+
+#Python notebooks
+*.ipynb
+
+#random files
+descriptions
+archive/
+
+# Node modules (do NOT commit this)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/project settings
+.vscode/
+.idea/
+
+# Optional: coverage/test output
+coverage/

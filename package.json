@@ -1,0 +1,33 @@
+{
+  "name": "news-app",
+  "version": "1.0.0",
+  "description": "News Node.js app with static Bootstrap UI",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon server.mjs",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "bootstrap": "^5.3.6",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^7.1.1"
+  },
+  "author": "Marina Polupanova",
+  "license": "MIT"
+}
