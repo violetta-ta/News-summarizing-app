@@ -5,7 +5,8 @@ This repository provides a starter template for a JavaScript-based application t
 
 **Note:** This repository includes the major components of the application but does not contain the final full functionality for condensing the entire news corpus. It is intended as a base to build upon.
 
----
+
+
 
 ## 🔧 Application Architecture
 
@@ -21,14 +22,16 @@ To start MongoDB, run:
 systemctl start mongod
 ```
 
----
+
+
 
 ## 🌐 Frontend
 
 * The user interface is implemented as a **static HTML page** styled with **Bootstrap** for a lightweight and responsive design.
 * Once logged in, users can click **"Load News"** to retrieve and summarize news articles.
 
----
+
+
 
 ## 🔑 API Access
 
@@ -36,14 +39,16 @@ systemctl start mongod
 * The free tier provides only previews of articles. For access to full article text (and thus more meaningful summaries), a paid subscription required.
 * Currently, the app fetches **business news**, but you can easily switch to other categories by modifying the request parameters.
 
----
+
+
 
 ## 🧠 News Summarization
 
 * News summarization is performed using **Llama 3.2**, running locally on a CPU-based machine. To handle delays during request processing I introduced a **timeout** in the fetching function.
 * You can replace the local model with any commercial LLM API (e.g., OpenAI, Anthropic, Mistral, etc.) by adjusting the summarization function’s API call syntax.
 
----
+
+
 
 ## 💬 Notes
 
