@@ -11,17 +11,15 @@ This repository provides a starter template for a JavaScript-based application t
 
 ### Backend
 
-* **Server**: Built with **Node.js**, chosen for its ability to handle multiple simultaneous requests efficiently—making it a suitable choice for multi-user extensions (e.g., for family or small teams).
-* **Authentication**: Uses **JWT (JSON Web Tokens)** for stateless authentication, avoiding the need for server-side session storage.
-* **Database**: User credentials are stored in **MongoDB**, which by default runs locally on the same machine as the application.
+* **Server**: Built with **Node.js**, which can handle multiple simultaneous requests efficiently. This allows to expand application to multiple users  (e.g., for family or small teams).
+* **Authentication**: Uses **JWT (JSON Web Tokens)** for stateless authentication, avoiding the need for adding components for server-side session storage.
+* **Database**: User credentials are stored in **MongoDB**, which by default runs locally on the same machine as the application. Ensure MongoDB is installed and running before launching the app. You’ll also need to configure your MongoDB connection string in `./config/.env`.
 
 To start MongoDB, run:
 
 ```bash
 systemctl start mongod
 ```
-
-Ensure MongoDB is installed and running before launching the app. You’ll also need to configure your MongoDB connection string in `./config/.env`.
 
 ---
 
