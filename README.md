@@ -15,13 +15,13 @@ This repository provides a starter template for a JavaScript-based application t
 * **Authentication**: Uses **JWT (JSON Web Tokens)** for stateless authentication, avoiding the need for server-side session storage.
 * **Database**: User credentials are stored in **MongoDB**, which by default runs locally on the same machine as the application.
 
-> To start MongoDB, run:
+To start MongoDB, run:
 
 ```bash
 systemctl start mongod
 ```
 
-> Ensure MongoDB is installed and running before launching the app. You’ll also need to configure your MongoDB connection string in `./config/.env`.
+Ensure MongoDB is installed and running before launching the app. You’ll also need to configure your MongoDB connection string in `./config/.env`.
 
 ---
 
