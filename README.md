@@ -1,21 +1,56 @@
-# News-summarizing-app
-JS application starter which reads news over API and displays news summary and thumbnails
 
-This repository contains a starter for an application creating a focused news summary. However this repository does not include all the final functions condensing the news corpus which I finally made, it has most of initial major components of the solution. 
+## 📰 JS News Summarization App Starter
 
-### Application components
+This repository provides a starter template for a JavaScript-based application that retrieves news articles from an external API and displays their summaries and thumbnails in a clean, responsive interface.
 
-I chose Node.js as a server because if I would want to expand the application to multiple users (like family and friends) - it will help me to handle multiple simultaneous requests. UI is done as a static page using Bootstrap which makes client-side very simple and lightweight. 
+> **Note:** This repository includes the major components of the application but does not contain the final full functionality for condensing the entire news corpus. It is intended as a base to build upon.
 
-The application uses JWT token authentication. I prefer it as it is stateless and did not require from me managing any in-memory storage in addition to all other components I use. I store user credentials in Mongo DB which in my case launched on the same PC where I'm running the app. To run the application, ensure you installed Mongo DB on your machine, and save the path to "./config/.env" file. Also, ensure that your Mongo DB is running before launching the app.
+---
 
-*systemctl start mongod*
+## 🔧 Application Architecture
 
-### API accounts which you need
+### Backend
 
-After you have created the account in the application and logged in, you can request the news with its summary by pressing the button "Load News". For news article, I'm using the free API from GNews (you will need to get their API Key and save it in the config file). If you will chose to use a paid subscription from them, you will get the access to full article texts, so the news summaries will be more meaningful. I'm fetching business news in the current code, but it is possible to chose among variety of news topics.
+* **Server**: Built with **Node.js**, chosen for its ability to handle multiple simultaneous requests efficiently—making it a suitable choice for multi-user extensions (e.g., for family or small teams).
+* **Authentication**: Uses **JWT (JSON Web Tokens)** for stateless authentication, avoiding the need for server-side session storage.
+* **Database**: User credentials are stored in **MongoDB**, which by default runs locally on the same machine as the application.
 
-I summarize the news with Llama 3.2, installed on my computer (as it does not have GPU, I introduced a timeout for a summary function not to get the LLM request dropped). However, it is possible to substitute it with any paid LLM API which you may have (fetching function has to be modified to reflect the syntax of the corresponding API). 
+> To start MongoDB, run:
 
-For some pieces of code I used chat-GPT to speed up the creation process.
+```bash
+systemctl start mongod
+```
+
+> Ensure MongoDB is installed and running before launching the app. You’ll also need to configure your MongoDB connection string in `./config/.env`.
+
+---
+
+## 🌐 Frontend
+
+* The user interface is implemented as a **static HTML page** styled with **Bootstrap** for a lightweight and responsive design.
+* Once logged in, users can click **"Load News"** to retrieve and summarize news articles.
+
+---
+
+## 🔑 API Access
+
+* The application fetches news from the free [GNews API](https://gnews.io). You'll need to obtain an API key and add it to your `.env` config file.
+* The free tier provides only previews of articles. For access to full article text (and thus more meaningful summaries), a paid subscription required.
+* Currently, the app fetches **business news**, but you can easily switch to other categories by modifying the request parameters.
+
+---
+
+## 🧠 News Summarization
+
+* News summarization is performed using **Llama 3.2**, running locally on a CPU-based machine. To handle delays during request processing I introduced a **timeout** in the fetching function.
+* You can replace the local model with any commercial LLM API (e.g., OpenAI, Anthropic, Mistral, etc.) by adjusting the summarization function’s API call syntax.
+
+---
+
+## 💬 Notes
+
+* Portions of the code were generated or assisted using **ChatGPT** to accelerate development.
+* This project is a work in progress and serves as a base for experimenting and building more advanced apps.
+
+---
 
