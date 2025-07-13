@@ -1,9 +1,9 @@
 
 ## 📰 JS News Summarization App Starter
 
-This repository provides a starter template for a JavaScript-based application that retrieves news articles from an external API and displays their summaries and thumbnails in a clean, responsive interface.
+This repository provides a starter template for a JavaScript-based application that retrieves news articles from an external API and displays their summaries and thumbnails.
 
-> **Note:** This repository includes the major components of the application but does not contain the final full functionality for condensing the entire news corpus. It is intended as a base to build upon.
+**Note:** This repository includes the major components of the application but does not contain the final full functionality for condensing the entire news corpus. It is intended as a base to build upon.
 
 ---
 
