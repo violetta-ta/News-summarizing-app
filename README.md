@@ -28,7 +28,7 @@ systemctl start mongod
 ## 🌐 Frontend
 
 * The user interface is implemented as a **static HTML page** styled with **Bootstrap** for a lightweight and responsive design.
-* Before running the application download **bootstrap.min.css** from  https://getbootstrap.com/docs/5.3/getting-started/download/ and place it to "./public/vendor/bootstrap"
+* Before running the application download **bootstrap.min.css** an **bootstrap.bundle.min.js** from  https://getbootstrap.com/docs/5.3/getting-started/download/ and place it to "./public/vendor/bootstrap"
 * Once logged in, users can click **"Load News"** to retrieve and summarize news articles.
 
 
